@@ -2,28 +2,6 @@ package Jdbc1;
 
 public class BeforeWeStart {
     public static void main(String[] args) {
-        System.out.println("Example 1");
-
-        try {
-            System.out.println("Hello");
-            System.out.println("world");
-        } finally {
-            System.out.println("finish");
-        }
-
-        System.out.println();
-        System.out.println("Example 2");
-
-        try {
-            System.out.println(10 / 0);
-            System.out.println("success"); // !!
-        } catch (Exception ex) {
-            System.out.println(ex);
-        }
-
-        System.out.println();
-        System.out.println("Example 3");
-
         API api = new MySQL();
         api.connect();
         api.executeQuery("SELECT * from x");
